@@ -1,0 +1,123 @@
+:root{
+    --primary-color: #1471C8;
+    --secondary-color: #F6820E;
+    --primary-hover: #105291;
+    --secondary-hover: #b9620a;
+}
+
+*{
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+/* header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color: var(--primary-color);
+    padding: 0 20px;
+    position: relative; 
+}
+
+.logo {
+    position: absolute;
+    left: 20px;
+    flex-shrink: 0;
+}
+
+.header_button {
+    display: flex;
+    gap: 30px;
+}
+
+button{
+    border: none;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 15px 10px;
+    border-radius: 25px;
+    font-size: 20px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: var(--secondary-hover);
+}
+
+/* body */
+.title{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.page_title{
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.sec_name, .sec_email, .sec_mes{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+input, textarea{
+    width: 300px;
+    height: 25px;
+    padding: 16px;
+    border-radius: 15px;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+textarea{
+    width: 300px;
+    height: 100px;
+}
+
+.sec_sub{
+    text-align: center;
+}
+
+.sub_button{
+    width: 100px;
+    height: 50px;
+}
+
+
+/* footer */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color: var(--primary-color);
+    padding: 0 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100px; 
+    margin-top: 50px;
+}
+
+.copyright{
+    position: absolute;
+    left: 20px;
+    flex-shrink: 0;
+}
+
+.contact_links{
+    display: flex;
+    gap: 30px;
+}
+
+.mail, .github, .linkedin{
+    padding-top: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 12px;
+}

@@ -1,0 +1,147 @@
+:root{
+    --primary-color: #1471C8;
+    --secondary-color: #F6820E;
+    --primary-hover: #105291;
+    --secondary-hover: #b9620a;
+}
+
+*{
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+/* header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color: var(--primary-color);
+    padding: 0 20px;
+    position: relative; 
+}
+
+.logo {
+    position: absolute;
+    left: 20px;
+    flex-shrink: 0;
+}
+
+.header_button {
+    display: flex;
+    gap: 30px;
+}
+
+button{
+    border: none;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 15px 10px;
+    border-radius: 25px;
+    font-size: 20px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: var(--secondary-hover);
+}
+
+/* body */
+
+.title{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.page_title{
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.rec_pad{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.sec_title{
+    font-size: 28px;
+}
+
+.pad_sec{
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.pad1_desc, .pad2_desc{
+    font-size: 20px;
+}
+
+.snare_sticks_img:hover, .ten_sticks_img:hover{
+    box-shadow: 0px 5px lightgray;
+}
+
+.bass_sticks_img{
+    transform: rotate(180deg);
+}
+
+.bass_sticks_img:hover{
+    box-shadow: 0px -5px lightgray;
+}
+
+.rec_snare_sticks, .rec_ten_sticks, .rec_bass_sticks{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.stick1, .stick2{
+    margin-bottom: 50px;
+}
+
+.sticks_title{
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.sticks_desc{
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+/* footer */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color: var(--primary-color);
+    padding: 0 20px;
+    position: relative; 
+    margin-top: 50px;
+}
+
+.copyright{
+    position: absolute;
+    left: 20px;
+    flex-shrink: 0;
+}
+
+.contact_links{
+    display: flex;
+    gap: 30px;
+}
+
+.mail, .github, .linkedin{
+    padding-top: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 12px;
+}

@@ -1,0 +1,163 @@
+:root{
+    --primary-color: #1471C8;
+    --secondary-color: #F6820E;
+    --primary-hover: #105291;
+    --secondary-hover: #b9620a;
+}
+
+*{
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+/* header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color: var(--primary-color);
+    padding: 0 20px;
+    position: relative; 
+}
+
+.logo {
+    position: absolute;
+    left: 20px;
+    flex-shrink: 0;
+}
+
+.header_button {
+    display: flex;
+    gap: 30px;
+}
+
+button{
+    border: none;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 15px 10px;
+    border-radius: 25px;
+    font-size: 20px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: var(--secondary-hover);
+}
+
+/* body */
+.title{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.page_title{
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.row1, .row2, .row3, .row4, .row5, .row6{
+    margin-top: 50px;
+    margin-bottom: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card_title{
+    background-color: var(--primary-color);
+    max-width: 90%;
+    width: 500px;
+    padding: 60px;
+    border-radius: 25px;
+    font-size: 48px;
+    color: white;
+    margin: auto;
+}
+
+.card_title:hover{
+    cursor: pointer;
+    background-color: var(--primary-hover);
+}
+
+.card_instruments{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    justify-content: center;
+}
+.snare, .ten, .bass{
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 25px;
+    font-size: 20px;
+    color: white;
+    max-width: 90%;
+    width: 100px;
+}
+
+.snare:hover, .ten:hover, .bass:hover{
+    cursor: pointer;
+    background-color: var(--secondary-hover);
+}
+
+.card_tempi{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+    justify-content: center;
+}
+
+.tempi1, .tempi2, .tempi3, .tempi4, .tempi5, .tempi6{
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 16px;
+    color: white;
+    max-width: 90%;
+    width: 50px;
+}
+
+.tempi1:hover, .tempi2:hover, .tempi3:hover, .tempi4:hover, .tempi5:hover{
+    cursor: pointer;
+    background-color: var(--secondary-hover);
+}
+
+a{
+    text-decoration: none;
+}
+
+/* footer */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color: var(--primary-color);
+    padding: 0 20px;
+    position: relative; 
+    margin-top: 50px;
+}
+
+.copyright{
+    position: absolute;
+    left: 20px;
+    flex-shrink: 0;
+}
+
+.contact_links{
+    display: flex;
+    gap: 30px;
+}
+
+.mail, .github, .linkedin{
+    padding-top: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 12px;
+}
