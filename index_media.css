@@ -1,26 +1,10 @@
-@media (min-width: 768px){
+@media (min-width: 769px){
     .header_control{
-        display: none;
-    }
-
-    .home_control{
         display: none;
     }
 }
 
 @media (max-width: 1300px){
-    :root{
-        --primary-color: #1471C8;
-        --secondary-color: #F6820E;
-        --primary-hover: #105291;
-        --secondary-hover: #b9620a;
-    }
-    
-    *{
-        margin: 0px;
-        font-family: sans-serif;
-    }
-    
     /* header */
     header {
         display: flex;
@@ -150,28 +134,13 @@
     }
 
     .mail, .github, .linkedin{
-        padding-top: 12px;
-        padding-left: 8px;
-        padding-right: 8px;
-        padding-bottom: 12px;
+        padding: 12px 8px;
     }
 }
 
 @media (max-width: 768px){
-    :root{
-        --primary-color: #1471C8;
-        --secondary-color: #F6820E;
-        --primary-hover: #105291;
-        --secondary-hover: #b9620a;
-    }
-    
-    *{
-        margin: 0px;
-        font-family: sans-serif;
-    }
-
     /* header */
-    .header{
+    header{
         display: none;
     }
 
