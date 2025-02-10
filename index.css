@@ -15,7 +15,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100px;
+    height: 150px;
     background-color: var(--primary-color);
     padding: 0 20px;
     position: relative; 
@@ -27,7 +27,7 @@ header {
     flex-shrink: 0;
 }
 
-.header_button {
+.button_group {
     display: flex;
     gap: 30px;
 }
@@ -47,6 +47,14 @@ button:hover{
 }
 
 /* body */
+
+.header_control_button{
+    display: flex;
+    border-radius: 0px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+}
 
 .title{
     margin-top: 30px;
@@ -140,8 +148,5 @@ footer{
 }
 
 .mail, .github, .linkedin{
-    padding-top: 12px;
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-bottom: 12px;
+    padding: 12px, 8px, 8px, 12px;
 }
