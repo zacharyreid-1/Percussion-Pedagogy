@@ -27,7 +27,7 @@ header {
     flex-shrink: 0;
 }
 
-.button_group {
+.header_button {
     display: flex;
     gap: 30px;
 }
