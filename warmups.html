@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="warmups.css">
+    <link rel="stylesheet" href="warmups_media.css">
 
     <title>Warmups</title>
 
@@ -14,13 +15,15 @@
 
 <body>
 
-    <header>
+    <header id="header">
 
         <div class="logo">
             <a href="index.html" class="logo_link">
-                <img src="assets/images/Perc_Site_Logo.drawio.png" alt="Percussion Pedagogy Logo" class="logo_image" width="80px" height="80px">
+                <img src="assets/images/Perc_Site_Logo.drawio.png" alt="Percussion Pedagogy Logo" class="logo_image" width="80px" height="80px" loading="lazy">
             </a>
         </div>
+
+        
 
         <section class="header_button">
             <div class="button1">
@@ -43,6 +46,12 @@
     </header>
 
     <main>
+
+        <div class="mobile_controls">
+            <div class="header_control">
+                <button class="header_control_button" id="toggleHeader">Toggle Header</button>
+            </div>
+        </div>
 
         <div class="title">
             <h1 class="page_title">Percussion Warmups</h1>
@@ -327,6 +336,14 @@
         </section>
 
     </footer>
+
+    <script>
+        // Script to Toggle Header
+        document.getElementById("toggleHeader").addEventListener("click", function(){
+            document.getElementById("header").classList.toggle("header")
+            }
+        );
+    </script>
     
 </body>
 

@@ -1,0 +1,132 @@
+@media (min-width: 769px){
+    .header_control{
+        display: none;
+    }
+}
+
+@media (max-width: 1300px){
+    /* header */
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 150px;
+        background-color: var(--primary-color);
+        padding: 0 20px;
+        position: relative; 
+    }
+    
+    .logo {
+        position: absolute;
+        left: 20px;
+        flex-shrink: 0;
+    }
+    
+    .header_button {
+        display: flex;
+        gap: 30px;
+    }
+    
+    button{
+        border: none;
+        background-color: var(--secondary-color);
+        color: white;
+        padding: 15px 10px;
+        border-radius: 25px;
+        font-size: 20px;
+    }
+    
+    button:hover{
+        cursor: pointer;
+        background-color: var(--secondary-hover);
+    }
+
+    /* body */
+    .card_title{
+        width: 300px;
+    }
+
+    .card_instruments{
+        gap: 25px;
+    }
+
+    .card_tempi{
+        gap: 10px;
+    }
+
+    /* footer */
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+        background-color: var(--primary-color);
+        padding: 0 20px;
+        position: relative; 
+        margin-top: 50px;
+    }
+
+    .copyright{
+        position: absolute;
+        left: 20px;
+        flex-shrink: 0;
+    }
+
+    .contact_links{
+        display: flex;
+        gap: 30px;
+    }
+
+    .mail, .github, .linkedin{
+        padding: 12px 8px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 1000px){
+    /* header */
+    .header{
+        display: none;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    button{
+        width: fit-content;
+        margin: auto;
+        height: 50px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    /* body */
+    .row1, .row2, .row3{
+        margin-top: 50px;
+        margin-bottom: 100px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 100px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .card_title{
+        width: 200px;
+    }
+
+    .card_instruments{
+        gap: 10px;
+    }
+
+    .card_tempi{
+        gap: 10px;
+    }
+
+    /* footer */
+    .copyright{
+        display: none;
+    }
+
+}

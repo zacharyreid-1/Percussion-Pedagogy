@@ -15,7 +15,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100px;
+    height: 150px;
     background-color: var(--primary-color);
     padding: 0 20px;
     position: relative; 
@@ -47,6 +47,14 @@ button:hover{
 }
 
 /* body */
+.header_control_button{
+    display: flex;
+    border-radius: 0px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
 .title{
     margin-top: 30px;
     text-align: center;
@@ -89,6 +97,8 @@ button:hover{
     flex-direction: row;
     gap: 100px;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .snare, .ten, .bass{
@@ -112,6 +122,8 @@ button:hover{
     flex-direction: row;
     gap: 45px;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .tempi1, .tempi2, .tempi3, .tempi4, .tempi5{
@@ -157,8 +169,5 @@ footer{
 }
 
 .mail, .github, .linkedin{
-    padding-top: 12px;
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-bottom: 12px;
+    padding: 12px 8px;
 }
