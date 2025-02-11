@@ -2,6 +2,10 @@
     .header_control{
         display: none;
     }
+
+    .home_button{
+        display: none;
+    }
 }
 
 @media (max-width: 1300px){
@@ -146,6 +150,27 @@
 
     .logo{
         display: none;
+    }
+
+    .all_head_butt{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        justify-items: center;
+    }
+
+    .all_head_butt .home_button{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .all_head_butt .header_button{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        grid-column: 1/4;
+        grid-row: 2;
+        justify-items: center;
     }
 
     button{
