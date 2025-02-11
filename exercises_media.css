@@ -101,7 +101,7 @@
     }
 
     /* body */
-    .row1, .row2, .row3{
+    .row1, .row2, .row3, .row4, .row5, .row6{
         margin-top: 50px;
         margin-bottom: 100px;
         display: grid;

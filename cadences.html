@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="cadences.css">
+    <link rel="stylesheet" href="cadences_media.css">
 
     <title>Cadences</title>
 
@@ -14,7 +15,7 @@
 
 <body>
 
-    <header>
+    <header id="header">
 
         <div class="logo">
             <a href="index.html" class="logo_link">
@@ -43,6 +44,12 @@
     </header>
 
     <main>
+
+        <div class="mobile_controls">
+            <div class="header_control">
+                <button class="header_control_button" id="toggleHeader">Toggle Header</button>
+            </div>
+        </div>
 
         <div class="title">
             <h1 class="page_title">Percussion Cadences</h1>
@@ -327,6 +334,14 @@
         </section>
 
     </footer>
+
+    <script>
+        // Script to Toggle Header
+        document.getElementById("toggleHeader").addEventListener("click", function(){
+            document.getElementById("header").classList.toggle("header")
+            }
+        );
+    </script>
     
 </body>
 
