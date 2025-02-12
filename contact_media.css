@@ -118,31 +118,7 @@
 
     /* footer */
     footer{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100px;
-        background-color: var(--primary-color);
-        padding: 0 20px;
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        height: 100px; 
-        margin-top: 50px;
-    }
-    
-    .copyright{
         display: none;
-    }
-    
-    .contact_links{
-        display: flex;
-        gap: 30px;
-    }
-    
-    .mail, .github, .linkedin{
-        padding: 12px 8px;
     }
     
 }
