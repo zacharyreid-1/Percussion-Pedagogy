@@ -133,9 +133,7 @@
     }
     
     .copyright{
-        position: absolute;
-        left: 20px;
-        flex-shrink: 0;
+        display: none;
     }
     
     .contact_links{
