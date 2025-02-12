@@ -15,7 +15,6 @@
 }
 
 .dark_mode{
-
     --primary-color: #3A7DC1;
     --secondary-color: #ff9b50;
     --primary-hover: #3a7dc1;
@@ -23,34 +22,27 @@
     --background-color: #121212;
     --text-color: #e0e0e0;
     --card-background: #1e1e1e;
-
-    .dark_toggle{
-        display: none;
-    }
-
-    .light_toggle{
-        display: block;
-    }
-
 }
 
-.light_mode{
-
-    .light_toggle{
-        display: none;
-    }
-
-    .dark_toggle{
-        display: block;
-    }
-
+.dark_mode .dark_toggle{
+    display: none;
 }
 
-body{
-    .light_toggle{
-        display: none;
-    }
+.dark_mode .light_toggle{
+    display: none;
+}
 
+.light_mode .light_toggle{
+    display: none;
+}
+
+.light_mode .dark_toggle{
+    display: none;
+}
+
+body .light_toggle{
+    display: none;
+    
     background-color: var(--background-color);
     color: var(--text-color);
 }
