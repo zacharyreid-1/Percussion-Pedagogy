@@ -60,6 +60,13 @@
                 <button class="header_control_button" id="toggleHeader">Toggle Header</button>
             </div>
         </div>
+
+        <section class="theme_switch">
+            <label class="switch">
+                <input type="checkbox" id="themeToggle">
+                <span class="slider round"></span>
+            </label>
+        </section>
         
        <div class="title">
             <h1 class="page_title">Percussion Pedagogy</h1>
@@ -73,7 +80,7 @@
             <div class="pad_sec">
                 <div class="vf_pad_1">
                     <a href="https://vicfirth.com/products/heavy-hitter-slimpad-with-rim?srsltid=AfmBOorUC_fV_wxbRZp8uoGiak5TR-2h-o6Go95COwpir-gtTJ30sRkp" class="pad1_link" target="_blank">
-                        <img src="assets/images/Vic_Firth_Slim_Pad.jpg" alt="Vic Firth Slim Pad" class="pad1_image" width="300px" height="300px" loading="lazy">
+                        <img src="assets/images/Vic_Firth_Slim_Pad.png" alt="Vic Firth Slim Pad" class="pad1_image" width="300px" height="300px" loading="lazy">
                     </a>
                         <p class="pad1_desc">Vic Firth Heavy Hitter Slim Pad</p>
                 </div>
@@ -190,6 +197,35 @@
             document.getElementById("header").classList.toggle("header")
             }
         );
+
+    // Applies theme to all pages and sets switch accordingly
+        document.addEventListener("DOMContentLoaded", function(){
+            const savedTheme = localStorage.getItem("theme");
+            const toggleSwitch = document.getElementById("themeToggle");
+
+            if (savedTheme){
+                document.body.classList.add(savedTheme);
+                if (savedTheme === "dark_mode"){
+                    toggleSwitch.checked = true;
+                }
+            }
+        });
+
+    // Toggles theme when swtich is changed
+    document.getElementById("themeToggle").addEventListener("change", function(){
+        if (this.checked){
+            document.body.classList.remove("light_mode");
+            document.body.classList.add("dark_mode");
+            
+            localStorage.setItem("theme", "dark_mode");
+        } else{
+            document.body.classList.remove("dark_mode");
+            document.body.classList.add("light_mode");
+
+            localStorage.setItem("theme", "light_mode");
+        }
+    });
+
     </script>
     
 </body>
